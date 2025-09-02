@@ -16,6 +16,8 @@ public class MainPage {
     private final By locatorButtonCookiesWindow = By.className("App_CookieButton__3cvqF");
     private final By locatorButtonOrderUp = By.cssSelector(".Button_Button__ra12g");
     private final By locatorButtonOrderDown = By.cssSelector(".Button_Button__ra12g.Button_Middle__1CSJM");
+    private final String mainPageAdress = "https://qa-scooter.praktikum-services.ru";
+    private final String orderPageAdress = "https://qa-scooter.praktikum-services.ru/order";
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
@@ -23,7 +25,7 @@ public class MainPage {
 
     // Открываем страртовую страницу
     public void openMainPage() {
-        driver.get("https://qa-scooter.praktikum-services.ru/");
+        driver.get(mainPageAdress);
     }
 
     // Находим и кликаем по заданному пункту FAQ
@@ -42,18 +44,18 @@ public class MainPage {
     public void ClickOnButtonOrderUp() {
         WebElement element =  driver.findElement(locatorButtonOrderUp);
         element.click();
-        String expectedUrl = "https://qa-scooter.praktikum-services.ru/order";
+        String expectedUrl = orderPageAdress;
         String actualUrl = driver.getCurrentUrl();
 
         assertEquals("Кнопка заказа вверху ведет на ошибочный адрес", expectedUrl, actualUrl);
     }
 
     // Проверяем работоспособность кнопки снизу
-    public void ClickOnButtonOrderDown() {
+    public void сlickOnButtonOrderDown() {
         WebElement element =  driver.findElement(locatorButtonOrderDown);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         element.click();
-        String expectedUrl = "https://qa-scooter.praktikum-services.ru/order";
+        String expectedUrl = orderPageAdress;
         String actualUrl = driver.getCurrentUrl();
 
         assertEquals("Кнопка заказа снизу ведет на ошибочный адрес", expectedUrl, actualUrl);
