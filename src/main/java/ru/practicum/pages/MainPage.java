@@ -44,10 +44,8 @@ public class MainPage {
     public void ClickOnButtonOrderUp() {
         WebElement element =  driver.findElement(locatorButtonOrderUp);
         element.click();
-        String expectedUrl = orderPageAdress;
         String actualUrl = driver.getCurrentUrl();
-
-        assertEquals("Кнопка заказа вверху ведет на ошибочный адрес", expectedUrl, actualUrl);
+        assertEquals("Кнопка заказа вверху ведет на ошибочный адрес", orderPageAdress, actualUrl);
     }
 
     // Проверяем работоспособность кнопки снизу
@@ -55,10 +53,9 @@ public class MainPage {
         WebElement element =  driver.findElement(locatorButtonOrderDown);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         element.click();
-        String expectedUrl = orderPageAdress;
         String actualUrl = driver.getCurrentUrl();
 
-        assertEquals("Кнопка заказа снизу ведет на ошибочный адрес", expectedUrl, actualUrl);
+        assertEquals("Кнопка заказа снизу ведет на ошибочный адрес", orderPageAdress, actualUrl);
     }
 
     // Закрываем окно с куками
