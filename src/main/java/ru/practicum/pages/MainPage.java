@@ -34,7 +34,7 @@ public class MainPage {
         element.click();
     }
 
-    // Проверяем, что предполагаемый текст совпадает с тем что находится в раскрытом пункте FAQ
+    // Проверяем, что предполагаемый текст совпадает с тем что находится в раскрытом пункте  FAQ
     public void checkErrorTextFAQ(By locatorAnswer, String textFAQ) {
         assertEquals("Текст не совпал", textFAQ, driver.findElement(locatorAnswer).getText());
     }
