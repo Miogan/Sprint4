@@ -13,10 +13,10 @@ import static org.junit.Assert.assertEquals;
 
 public class MainPage {
     private final WebDriver driver;
-    private By locatorButtonCookiesWindow = By.className("App_CookieButton__3cvqF");
-    private By locatorButtonOrderUp = By.cssSelector(".Button_Button__ra12g");
-    private By locatorButtonOrderDown = By.cssSelector(".Button_Button__ra12g.Button_Middle__1CSJM");
-    private By locatorQuestion;
+    private final By locatorButtonCookiesWindow = By.className("App_CookieButton__3cvqF");
+    private final By locatorButtonOrderUp = By.cssSelector(".Button_Button__ra12g");
+    private final By locatorButtonOrderDown = By.cssSelector(".Button_Button__ra12g.Button_Middle__1CSJM");
+    
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
