@@ -38,8 +38,6 @@ public class MainPage {
         assertEquals("Текст не совпал", textFAQ, driver.findElement(locatorAnswer).getText());
     }
 
-    // Order
-
     // Проверяем работоспособность кнопки сверху
     public void ClickOnButtonOrderUp() {
         WebElement element =  driver.findElement(locatorButtonOrderUp);
