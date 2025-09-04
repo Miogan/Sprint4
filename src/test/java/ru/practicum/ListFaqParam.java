@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import ru.practicum.pages.MainPage;
 
-
 @RunWith(Parameterized.class)
 public class ListFaqParam {
     private By locatorQuestion;
@@ -32,7 +31,7 @@ public class ListFaqParam {
                 {MainPage.LocatorQuestionScooterToday, MainPage.LocatorAnswerScooterToday, MainPage.LocatorReferenceAnswerScooterToday},
                 {MainPage.LocatorQuestionExtendingOrReturningAScooter, MainPage.LocatorAnswerExtendingOrReturningAScooter, MainPage.LocatorReferenceAnswerExtendingOrReturningAScooter},
                 {MainPage.LocatorQuestionChargerIncluded, MainPage.LocatorAnswerChargerIncluded, MainPage.LocatorReferenceAnswerChargerIncluded},
-                {MainPage.LocatorQuestionGalyaСancellation, MainPage.LocatorAnswerGalyaСancellation, MainPage.LocatorReferenceAnswerGalyaСancellation},
+                {MainPage.LocatorQuestionGalyaCancellation, MainPage.LocatorAnswerGalyaCancellation, MainPage.LocatorReferenceAnswerGalyaCancellation},
                 {MainPage.LocatorQuestionDeliveryOutsideTheMoscowRingRoad, MainPage.LocatorAnswerDeliveryOutsideTheMoscowRingRoad, MainPage.LocatorReferenceAnswerDeliveryOutsideTheMoscowRingRoad},
         };
     }

@@ -25,7 +25,7 @@ public class MainPage {
     public static final By LocatorQuestionScooterToday = By.cssSelector(".accordion__button[aria-controls='accordion__panel-3']");
     public static final By LocatorQuestionExtendingOrReturningAScooter = By.cssSelector(".accordion__button[aria-controls='accordion__panel-4']");
     public static final By LocatorQuestionChargerIncluded = By.cssSelector(".accordion__button[aria-controls='accordion__panel-5']");
-    public static final By LocatorQuestionGalyaСancellation = By.cssSelector(".accordion__button[aria-controls='accordion__panel-6']");
+    public static final By LocatorQuestionGalyaCancellation = By.cssSelector(".accordion__button[aria-controls='accordion__panel-6']");
     public static final By LocatorQuestionDeliveryOutsideTheMoscowRingRoad = By.cssSelector(".accordion__button[aria-controls='accordion__panel-7']");
     // Ответы
     public static final By LocatorAnswerWhatIsThePrice = By.cssSelector(".accordion__panel[id='accordion__panel-0']");
@@ -34,7 +34,7 @@ public class MainPage {
     public static final By LocatorAnswerScooterToday = By.cssSelector(".accordion__panel[id='accordion__panel-3']");
     public static final By LocatorAnswerExtendingOrReturningAScooter = By.cssSelector(".accordion__panel[id='accordion__panel-4']");
     public static final By LocatorAnswerChargerIncluded = By.cssSelector(".accordion__panel[id='accordion__panel-5']");
-    public static final By LocatorAnswerGalyaСancellation = By.cssSelector(".accordion__panel[id='accordion__panel-6']");
+    public static final By LocatorAnswerGalyaCancellation = By.cssSelector(".accordion__panel[id='accordion__panel-6']");
     public static final By LocatorAnswerDeliveryOutsideTheMoscowRingRoad = By.cssSelector(".accordion__panel[id='accordion__panel-7']");
     // Эталонный ответ
     public static final String LocatorReferenceAnswerWhatIsThePrice = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
@@ -43,7 +43,7 @@ public class MainPage {
     public static final String LocatorReferenceAnswerScooterToday = "Только начиная с завтрашнего дня. Но скоро станем расторопнее.";
     public static final String LocatorReferenceAnswerExtendingOrReturningAScooter = "Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.";
     public static final String LocatorReferenceAnswerChargerIncluded = "Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.";
-    public static final String LocatorReferenceAnswerGalyaСancellation = "Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.";
+    public static final String LocatorReferenceAnswerGalyaCancellation = "Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.";
     public static final String LocatorReferenceAnswerDeliveryOutsideTheMoscowRingRoad = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
 
 
