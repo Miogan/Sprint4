@@ -44,5 +44,4 @@ public class ListFaqParam {
         mainPage.clickOnButtonFAQ(locatorQuestion);
         mainPage.checkErrorTextFAQ(locatorAnswer, textFAQ);
     }
-
 }
