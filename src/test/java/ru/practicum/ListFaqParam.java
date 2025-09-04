@@ -25,14 +25,14 @@ public class ListFaqParam {
     @Parameterized.Parameters(name = "Локатор вопроса: {0}, Локатор ответа: {1}, Эталонный текст ответа: {2}")
     public static Object[][] getAddress() {
         return new Object[][]{
-                {MainPage.LocatorQuestionWhatIsThePrice, MainPage.LocatorAnswerWhatIsThePrice, MainPage.LocatorReferenceAnswerWhatIsThePrice},
-                {MainPage.LocatorQuestionPossibilityOfSeveralScooters, MainPage.LocatorAnswerPossibilityOfSeveralScooters, MainPage.LocatorReferenceAnswerPossibilityOfSeveralScooters},
-                {MainPage.LocatorQuestionTiming, MainPage.LocatorAnswerTiming, MainPage.LocatorReferenceAnswerTiming},
-                {MainPage.LocatorQuestionScooterToday, MainPage.LocatorAnswerScooterToday, MainPage.LocatorReferenceAnswerScooterToday},
-                {MainPage.LocatorQuestionExtendingOrReturningAScooter, MainPage.LocatorAnswerExtendingOrReturningAScooter, MainPage.LocatorReferenceAnswerExtendingOrReturningAScooter},
-                {MainPage.LocatorQuestionChargerIncluded, MainPage.LocatorAnswerChargerIncluded, MainPage.LocatorReferenceAnswerChargerIncluded},
-                {MainPage.LocatorQuestionGalyaCancellation, MainPage.LocatorAnswerGalyaCancellation, MainPage.LocatorReferenceAnswerGalyaCancellation},
-                {MainPage.LocatorQuestionDeliveryOutsideTheMoscowRingRoad, MainPage.LocatorAnswerDeliveryOutsideTheMoscowRingRoad, MainPage.LocatorReferenceAnswerDeliveryOutsideTheMoscowRingRoad},
+                {MainPage.locatorQuestionWhatIsThePrice, MainPage.locatorAnswerWhatIsThePrice, MainPage.locatorReferenceAnswerWhatIsThePrice},
+                {MainPage.locatorQuestionPossibilityOfSeveralScooters, MainPage.locatorAnswerPossibilityOfSeveralScooters, MainPage.locatorReferenceAnswerPossibilityOfSeveralScooters},
+                {MainPage.locatorQuestionTiming, MainPage.locatorAnswerTiming, MainPage.locatorReferenceAnswerTiming},
+                {MainPage.locatorQuestionScooterToday, MainPage.locatorAnswerScooterToday, MainPage.locatorReferenceAnswerScooterToday},
+                {MainPage.locatorQuestionExtendingOrReturningAScooter, MainPage.locatorAnswerExtendingOrReturningAScooter, MainPage.locatorReferenceAnswerExtendingOrReturningAScooter},
+                {MainPage.locatorQuestionChargerIncluded, MainPage.locatorAnswerChargerIncluded, MainPage.locatorReferenceAnswerChargerIncluded},
+                {MainPage.locatorQuestionGalyaCancellation, MainPage.locatorAnswerGalyaCancellation, MainPage.locatorReferenceAnswerGalyaCancellation},
+                {MainPage.locatorQuestionDeliveryOutsideTheMoscowRingRoad, MainPage.locatorAnswerDeliveryOutsideTheMoscowRingRoad, MainPage.locatorReferenceAnswerDeliveryOutsideTheMoscowRingRoad},
         };
     }
 

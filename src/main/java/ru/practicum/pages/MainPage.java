@@ -19,32 +19,32 @@ public class MainPage {
     private final String mainPageAddress = "https://qa-scooter.praktikum-services.ru";
     private final String orderPageAddress = "https://qa-scooter.praktikum-services.ru/order";
     // Вопросы
-    public static final By LocatorQuestionWhatIsThePrice = By.cssSelector(".accordion__button[aria-controls='accordion__panel-0']");
-    public static final By LocatorQuestionPossibilityOfSeveralScooters  = By.cssSelector(".accordion__button[aria-controls='accordion__panel-1']");
-    public static final By LocatorQuestionTiming  = By.cssSelector(".accordion__button[aria-controls='accordion__panel-2']");
-    public static final By LocatorQuestionScooterToday = By.cssSelector(".accordion__button[aria-controls='accordion__panel-3']");
-    public static final By LocatorQuestionExtendingOrReturningAScooter = By.cssSelector(".accordion__button[aria-controls='accordion__panel-4']");
-    public static final By LocatorQuestionChargerIncluded = By.cssSelector(".accordion__button[aria-controls='accordion__panel-5']");
-    public static final By LocatorQuestionGalyaCancellation = By.cssSelector(".accordion__button[aria-controls='accordion__panel-6']");
-    public static final By LocatorQuestionDeliveryOutsideTheMoscowRingRoad = By.cssSelector(".accordion__button[aria-controls='accordion__panel-7']");
+    public static final By locatorQuestionWhatIsThePrice = By.cssSelector(".accordion__button[aria-controls='accordion__panel-0']");
+    public static final By locatorQuestionPossibilityOfSeveralScooters  = By.cssSelector(".accordion__button[aria-controls='accordion__panel-1']");
+    public static final By locatorQuestionTiming  = By.cssSelector(".accordion__button[aria-controls='accordion__panel-2']");
+    public static final By locatorQuestionScooterToday = By.cssSelector(".accordion__button[aria-controls='accordion__panel-3']");
+    public static final By locatorQuestionExtendingOrReturningAScooter = By.cssSelector(".accordion__button[aria-controls='accordion__panel-4']");
+    public static final By locatorQuestionChargerIncluded = By.cssSelector(".accordion__button[aria-controls='accordion__panel-5']");
+    public static final By locatorQuestionGalyaCancellation = By.cssSelector(".accordion__button[aria-controls='accordion__panel-6']");
+    public static final By locatorQuestionDeliveryOutsideTheMoscowRingRoad = By.cssSelector(".accordion__button[aria-controls='accordion__panel-7']");
     // Ответы
-    public static final By LocatorAnswerWhatIsThePrice = By.cssSelector(".accordion__panel[id='accordion__panel-0']");
-    public static final By LocatorAnswerPossibilityOfSeveralScooters = By.cssSelector(".accordion__panel[id='accordion__panel-1']");
-    public static final By LocatorAnswerTiming = By.cssSelector(".accordion__panel[id='accordion__panel-2']");
-    public static final By LocatorAnswerScooterToday = By.cssSelector(".accordion__panel[id='accordion__panel-3']");
-    public static final By LocatorAnswerExtendingOrReturningAScooter = By.cssSelector(".accordion__panel[id='accordion__panel-4']");
-    public static final By LocatorAnswerChargerIncluded = By.cssSelector(".accordion__panel[id='accordion__panel-5']");
-    public static final By LocatorAnswerGalyaCancellation = By.cssSelector(".accordion__panel[id='accordion__panel-6']");
-    public static final By LocatorAnswerDeliveryOutsideTheMoscowRingRoad = By.cssSelector(".accordion__panel[id='accordion__panel-7']");
+    public static final By locatorAnswerWhatIsThePrice = By.cssSelector(".accordion__panel[id='accordion__panel-0']");
+    public static final By locatorAnswerPossibilityOfSeveralScooters = By.cssSelector(".accordion__panel[id='accordion__panel-1']");
+    public static final By locatorAnswerTiming = By.cssSelector(".accordion__panel[id='accordion__panel-2']");
+    public static final By locatorAnswerScooterToday = By.cssSelector(".accordion__panel[id='accordion__panel-3']");
+    public static final By locatorAnswerExtendingOrReturningAScooter = By.cssSelector(".accordion__panel[id='accordion__panel-4']");
+    public static final By locatorAnswerChargerIncluded = By.cssSelector(".accordion__panel[id='accordion__panel-5']");
+    public static final By locatorAnswerGalyaCancellation = By.cssSelector(".accordion__panel[id='accordion__panel-6']");
+    public static final By locatorAnswerDeliveryOutsideTheMoscowRingRoad = By.cssSelector(".accordion__panel[id='accordion__panel-7']");
     // Эталонный ответ
-    public static final String LocatorReferenceAnswerWhatIsThePrice = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
-    public static final String LocatorReferenceAnswerPossibilityOfSeveralScooters = "Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.";
-    public static final String LocatorReferenceAnswerTiming = "Допустим, вы оформляете заказ на 8 мая. Мы привозим самокат 8 мая в течение дня. Отсчёт времени аренды начинается с момента, когда вы оплатите заказ курьеру. Если мы привезли самокат 8 мая в 20:30, суточная аренда закончится 9 мая в 20:30.";
-    public static final String LocatorReferenceAnswerScooterToday = "Только начиная с завтрашнего дня. Но скоро станем расторопнее.";
-    public static final String LocatorReferenceAnswerExtendingOrReturningAScooter = "Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.";
-    public static final String LocatorReferenceAnswerChargerIncluded = "Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.";
-    public static final String LocatorReferenceAnswerGalyaCancellation = "Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.";
-    public static final String LocatorReferenceAnswerDeliveryOutsideTheMoscowRingRoad = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
+    public static final String locatorReferenceAnswerWhatIsThePrice = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
+    public static final String locatorReferenceAnswerPossibilityOfSeveralScooters = "Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.";
+    public static final String locatorReferenceAnswerTiming = "Допустим, вы оформляете заказ на 8 мая. Мы привозим самокат 8 мая в течение дня. Отсчёт времени аренды начинается с момента, когда вы оплатите заказ курьеру. Если мы привезли самокат 8 мая в 20:30, суточная аренда закончится 9 мая в 20:30.";
+    public static final String locatorReferenceAnswerScooterToday = "Только начиная с завтрашнего дня. Но скоро станем расторопнее.";
+    public static final String locatorReferenceAnswerExtendingOrReturningAScooter = "Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.";
+    public static final String locatorReferenceAnswerChargerIncluded = "Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.";
+    public static final String locatorReferenceAnswerGalyaCancellation = "Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.";
+    public static final String locatorReferenceAnswerDeliveryOutsideTheMoscowRingRoad = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
 
 
     public MainPage(WebDriver driver) {
