@@ -24,7 +24,7 @@ public class Order {
     private static final By locatorSelectedDeliveryDay = By.cssSelector(".react-datepicker__day--selected");
     private static final By locatorRentalPeriod = By.cssSelector(".Dropdown-placeholder");
     private static final By locatorCommentForTheCourier = By.cssSelector(".Input_Input__1iN_Z[placeholder='Комментарий для курьера']");
-    private static final By OrderСonfirmationWindow = By.className("Order_Modal__YZ-d3");
+    private static final By OrderConfirmationWindow = By.className("Order_Modal__YZ-d3");
     private static final String selectorButtonNextStepOROrder = "//button[@class='Button_Button__ra12g Button_Middle__1CSJM'";
     private static final String selectorRentalPeriodList = "//div[@class='Dropdown-option' and text()='";
     private static final String selectorCheckBoxColorScooter = "//label[text()='";
@@ -90,8 +90,8 @@ public class Order {
     public void clickButtonOrder() {
         driver.findElement(By.xpath(selectorButtonNextStepOROrder + " and text()='Заказать']")).click();
         new WebDriverWait(driver, Duration.ofSeconds(5))
-                .until(ExpectedConditions.presenceOfElementLocated(OrderСonfirmationWindow));
-        WebElement element = driver.findElement(OrderСonfirmationWindow);
+                .until(ExpectedConditions.presenceOfElementLocated(OrderConfirmationWindow));
+        WebElement element = driver.findElement(OrderConfirmationWindow);
         if (element.isDisplayed()) {
             driver.findElement(By.xpath(selectorButtonNextStepOROrder + "  and text()='Да']")).click();
         }

@@ -36,7 +36,7 @@ public class OrderScooter {
         this.commentRent = commentRent;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Имя: {0}, Фамилия {1}, Город: {2}, Станция метро: {3}, Номер телефона: {4}, Дата аренды: {5}, Период аренды {6}, Цвет самоката:{7}, Комментарий курьеру: {8}")
     public static Object[][] getOrderDetails() {
         return new Object[][]{
                 {"Арсений", "Троицкий", "г.Москва", "Комсомольская", "+7111111111", "01.09.2025", "двое суток", "серая безысходность", "оплата наличными"},

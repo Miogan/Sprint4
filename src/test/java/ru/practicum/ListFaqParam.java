@@ -22,7 +22,7 @@ public class ListFaqParam {
         this.locatorAnswer = locatorAnswer;
         this.textFAQ = textFAQ;
     }
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Локатор вопроса: {0}, Локатор ответа: {1}, Эталонный текст ответа: {2}")
     public static Object[][] getAddress() {
         return new Object[][]{
                 {MainPage.LocatorQuestionWhatIsThePrice, MainPage.LocatorAnswerWhatIsThePrice, MainPage.LocatorReferenceAnswerWhatIsThePrice},
