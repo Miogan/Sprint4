@@ -30,7 +30,6 @@ public class OrderPage {
     private static final String selectorCheckBoxColorScooter = "//label[text()='";
     private static final By locatorOrderConfirmationText = By.className("Order_ModalHeader__3FDaJ");
     private static final String OrderConfirmationText = "Заказ оформлен";
-    private String textWinOrder;
 
     public OrderPage(WebDriver driver) {
         this.driver = driver;
@@ -101,7 +100,7 @@ public class OrderPage {
     public void findWindowOrderConfirmation() {
         new WebDriverWait(driver, Duration.ofSeconds(5))
                 .until(ExpectedConditions.presenceOfElementLocated(locatorOrderConfirmationText));
-        textWinOrder = driver.findElement(locatorOrderConfirmationText).getText();
+        String textWinOrder = driver.findElement(locatorOrderConfirmationText).getText();
         assertTrue("Не удалось завершить оформление заказа", textWinOrder.contains(OrderConfirmationText));
     }
 }
