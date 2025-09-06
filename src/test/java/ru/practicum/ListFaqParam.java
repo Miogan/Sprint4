@@ -10,29 +10,19 @@ import ru.practicum.pages.MainPage;
 
 @RunWith(Parameterized.class)
 public class ListFaqParam {
-    private By locatorQuestion;
-    private By locatorAnswer;
-    private final String textFAQ;
+    private final int questionIndex;
 
     @Rule
     public DriverFactory factory = new DriverFactory();
 
-    public ListFaqParam (By locatorQuestion, By locatorAnswer, String textFAQ){
-        this.locatorQuestion = locatorQuestion;
-        this.locatorAnswer = locatorAnswer;
-        this.textFAQ = textFAQ;
+    public ListFaqParam(int questionIndex) {
+        this.questionIndex = questionIndex;
     }
-    @Parameterized.Parameters(name = "Локатор вопроса: {0}, Локатор ответа: {1}, Эталонный текст ответа: {2}")
+
+    @Parameterized.Parameters(name = "Локатор вопроса Локатор ответа Эталонный ответ{1}")
     public static Object[][] getAddress() {
         return new Object[][]{
-                {MainPage.locatorQuestionWhatIsThePrice, MainPage.locatorAnswerWhatIsThePrice, MainPage.locatorReferenceAnswerWhatIsThePrice},
-                {MainPage.locatorQuestionPossibilityOfSeveralScooters, MainPage.locatorAnswerPossibilityOfSeveralScooters, MainPage.locatorReferenceAnswerPossibilityOfSeveralScooters},
-                {MainPage.locatorQuestionTiming, MainPage.locatorAnswerTiming, MainPage.locatorReferenceAnswerTiming},
-                {MainPage.locatorQuestionScooterToday, MainPage.locatorAnswerScooterToday, MainPage.locatorReferenceAnswerScooterToday},
-                {MainPage.locatorQuestionExtendingOrReturningAScooter, MainPage.locatorAnswerExtendingOrReturningAScooter, MainPage.locatorReferenceAnswerExtendingOrReturningAScooter},
-                {MainPage.locatorQuestionChargerIncluded, MainPage.locatorAnswerChargerIncluded, MainPage.locatorReferenceAnswerChargerIncluded},
-                {MainPage.locatorQuestionGalyaCancellation, MainPage.locatorAnswerGalyaCancellation, MainPage.locatorReferenceAnswerGalyaCancellation},
-                {MainPage.locatorQuestionDeliveryOutsideTheMoscowRingRoad, MainPage.locatorAnswerDeliveryOutsideTheMoscowRingRoad, MainPage.locatorReferenceAnswerDeliveryOutsideTheMoscowRingRoad},
+                {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7},
         };
     }
 
@@ -41,7 +31,11 @@ public class ListFaqParam {
         WebDriver driver = factory.getDriver();
         var mainPage = new MainPage(driver);
         mainPage.openMainPage();
-        mainPage.clickOnButtonFAQ(locatorQuestion);
-        mainPage.checkErrorTextFAQ(locatorAnswer, textFAQ);
+        By questionLocator = mainPage.getQuestionLocator(questionIndex);
+        By answerLocator = mainPage.getAnswerLocator(questionIndex);
+        String expectedText = mainPage.getExpectedAnswer(questionIndex);
+        mainPage.clickOnButtonFAQ(questionLocator);
+        mainPage.checkErrorTextFAQ(answerLocator, expectedText);
     }
+
 }

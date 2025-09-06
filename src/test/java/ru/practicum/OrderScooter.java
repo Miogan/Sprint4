@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import ru.practicum.pages.MainPage;
-import ru.practicum.pages.Order;
+import ru.practicum.pages.OrderPage;
 
 @RunWith(Parameterized.class)
 public class OrderScooter {
@@ -46,26 +46,27 @@ public class OrderScooter {
 
     @Test
     public void testNonFoundАFieldsOrderForm() throws InstantiationException {
-            WebDriver driver = factory.getDriver();
-            var mainPage = new MainPage(driver);
-            var order = new Order(driver);
-            mainPage.openMainPage();
-            mainPage.closeCookes(); // окно с куками, если есть
-            mainPage.clickOnButtonOrderDown(); // проверяем нижнюю кнопку заказа и дальнейший тест пойдет через нее
-            order.fillingOutTheOrderFormName(name);
-            order.fillingOutTheOrderFormSurname(surname);
-            order.fillingOutTheOrderFormCity(city);
-            order.fillingOutTheOrderFormMetroStation(metroStation);
-            order.fillingOutTheOrderFormTelUser(tel);
-            order.clickButtonNext();
-            // заполняем вторую форму
-            order.fillingOutTheRentFormDateRent(dateRent);
-            order.fillingOutTheRentFormRentalPeriod(rentalPeriod);
-            order.fillingOutTheRentFormColorScooter(colorScooter);
-            order.fillingOutTheRentFormCommentForTheCourier(commentRent);
-            order.clickButtonOrder();
-            order.findWindowOrderConfirmation();
+        WebDriver driver = factory.getDriver();
+        var mainPage = new MainPage(driver);
+        var order = new OrderPage(driver);
+        mainPage.openMainPage();
+        mainPage.closeCookes(); // окно с куками, если есть
+        mainPage.clickOnButtonOrderDown(); // проверяем нижнюю кнопку заказа и дальнейший тест пойдет через нее
+        order.fillingOutTheOrderFormName(name);
+        order.fillingOutTheOrderFormSurname(surname);
+        order.fillingOutTheOrderFormCity(city);
+        order.fillingOutTheOrderFormMetroStation(metroStation);
+        order.fillingOutTheOrderFormTelUser(tel);
+        order.clickButtonNext();
+        // заполняем вторую форму
+        order.fillingOutTheRentFormDateRent(dateRent);
+        order.fillingOutTheRentFormRentalPeriod(rentalPeriod);
+        order.fillingOutTheRentFormColorScooter(colorScooter);
+        order.fillingOutTheRentFormCommentForTheCourier(commentRent);
+        order.clickButtonOrder();
+        order.findWindowOrderConfirmation();
     }
+
     @Test
     public void testNonFoundPageAddressUpButton() throws InstantiationException {
         WebDriver driver = factory.getDriver();

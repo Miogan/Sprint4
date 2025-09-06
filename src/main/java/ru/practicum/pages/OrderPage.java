@@ -10,7 +10,7 @@ import java.time.Duration;
 
 import static org.junit.Assert.assertTrue;
 
-public class Order {
+public class OrderPage {
 
     private final WebDriver driver;
     private static final By locatorUserName = By.cssSelector(".Input_Input__1iN_Z[placeholder='* Имя']");
@@ -32,7 +32,7 @@ public class Order {
     private static final String OrderConfirmationText = "Заказ оформлен";
     private String textWinOrder;
 
-    public Order(WebDriver driver) {
+    public OrderPage(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -48,13 +48,14 @@ public class Order {
     public void fillingOutTheOrderFormCity(String city) {
         driver.findElement(locatorCity).sendKeys(city);
     }
+
     public void fillingOutTheOrderFormMetroStation(String metroStation) {
         driver.findElement(locatorMetroStation).click();
         driver.findElement(locatorMetroStation).sendKeys(metroStation);
         driver.findElement(locatorSelectMetroStation).click();
     }
 
-    public void fillingOutTheOrderFormTelUser( String tel) {
+    public void fillingOutTheOrderFormTelUser(String tel) {
         driver.findElement(locatorTelUser).sendKeys(tel);
     }
 
@@ -96,6 +97,7 @@ public class Order {
             driver.findElement(By.xpath(selectorButtonNextStepOROrder + "  and text()='Да']")).click();
         }
     }
+
     public void findWindowOrderConfirmation() {
         new WebDriverWait(driver, Duration.ofSeconds(5))
                 .until(ExpectedConditions.presenceOfElementLocated(locatorOrderConfirmationText));
