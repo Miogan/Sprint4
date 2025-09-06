@@ -45,7 +45,7 @@ public class OrderScooter {
     }
 
     @Test
-    public void testNonFoundАFieldsOrderForm() throws InstantiationException {
+    public void testNonFoundAFieldsOrderForm() throws InstantiationException {
         WebDriver driver = factory.getDriver();
         var mainPage = new MainPage(driver);
         var order = new OrderPage(driver);
