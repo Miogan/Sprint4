@@ -34,8 +34,8 @@ public class ListFaqParam {
         By questionLocator = mainPage.getQuestionLocator(questionIndex);
         By answerLocator = mainPage.getAnswerLocator(questionIndex);
         String expectedText = mainPage.getExpectedAnswer(questionIndex);
-        mainPage.clickOnButtonFAQ(questionLocator);
-        mainPage.checkErrorTextFAQ(answerLocator, expectedText);
+        mainPage.clickOnButtonFAQ(questionLocator); // кликаем по вопросу
+        mainPage.checkErrorTextFAQ(answerLocator, expectedText); //сверяем ответ на странице с ожидаемым ответом
     }
 
 }
