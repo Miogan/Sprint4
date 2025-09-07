@@ -52,6 +52,7 @@ public class OrderScooter {
         mainPage.openMainPage();
         mainPage.closeCookes(); // окно с куками, если есть
         mainPage.clickOnButtonOrderDown(); // проверяем нижнюю кнопку заказа и дальнейший тест пойдет через нее
+        //заполняем первую форму
         order.fillingOutTheOrderFormName(name);
         order.fillingOutTheOrderFormSurname(surname);
         order.fillingOutTheOrderFormCity(city);
